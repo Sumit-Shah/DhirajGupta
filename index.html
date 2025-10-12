@@ -1,269 +1,506 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SWVKCLMY7E"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    gtag('config', 'G-SWVKCLMY7E');
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    </script>
-    <div id="user-info"></div>
+        <title>Medic Care Bootstrap 5 CSS Template</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>सर्वे भवन्तु सुखिनः</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <header class="header">
-        <a href="#" class="logo">Dr. Diraj Gupta<span class="animate" style="--i:1;"></span></a>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
 
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
-        </nav> 
-    </header>
+        <link href="css/owl.theme.default.min.css" rel="stylesheet">
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I am <span>Dr. Dhiraj Gupta</span></h1>
-            <div class="text-animate">
-                <h3>Physict</h3>
-            </div>
-            <p>I am Dr.Dhiraj Gupta, a healthcare professional with a focus on mental health. 
-                My practice integrates evidence-based approaches to support mental resilience, emotional balance, and overall psychological wellness. I am passionate about reducing stigma and fostering awareness around mental health issues.
-            </p>
+        <link href="css/templatemo-medic-care.css" rel="stylesheet">
+<!--
 
-            <div class="btn-box">
-                <a href="#" class="btn">Hire Me </a>
-                <a href="#" class="btn">Let's Talk</a>
-            </div>
-        </div>
-        <div class="home-sci">
-            <a href="mailto:dhirajpgold1@gmail.com" target="_blank" rel="noopener noreferrer">
-                <i class='bx bxl-gmail'></i>
-            </a>
-            <a href="https://www.instagram.com/dhiraj345/" target="_blank" rel="noopener noreferrer">
-                <i class='bx bxl-instagram'></i>
-            </a>
-            <a href="tel:+9779741847688" rel="noopener noreferrer">
-                <i class='bx bxs-phone'></i>
-            </a>
-        </div>
+TemplateMo 566 Medic Care
 
-        <div class="home-imgHover"></div>
-    </section>
+https://templatemo.com/tm-566-medic-care
 
-    <!-- About Section -->
-    <!-- <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
+-->
+    </head>
+    
+    <body id="top">
+    
+        <main>
 
-        <div class="about-img">
-            <img src="images/about.jpg" alt="" >
-            <span class="circle-spin"></span>
-        </div>
+            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
+                <div class="container">
+                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
+                       Dr. Dhiraj Gupta
+                        <strong class="d-block">Mental Health </strong>
+                    </a>
 
-        <div class="about-content">
-            <h3>JAVA DEVELOPER</h3>
-            <p>
-                I am a dedicated Java Developer with a good understanding of programming and software development. I enjoy building applications using Java and working with tools like MySQL and Spring Boot. I can write clean and organized code, solve problems, and work well in a team. I am always ready to learn new things and improve my skills to keep up with new technologies.
-            </p>
-            <div class="btn-box btns">
-                <a href="#" class="btn">Read More</a>
-            </div>
-        </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    </section> -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#hero">Home</a>
+                            </li>
 
-    <!-- Education Section 
-     <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-        <div class="education-row">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
 
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-                <div class="education-box">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#timeline">Timeline</a>
+                            </li>
 
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i> 2021 - 2025</div>
-                            <h3>Bachelor's Degree in Computing – University of Wolverhampton</h3>
-                            <p>Successfully completed undergraduate program with a strong focus on software development, data structures, cloud computing, and networking. 
-                                Gained practical experience through academic projects and hands-on assignments.</p>
-                        </div>
+                            <a class="navbar-brand d-none d-lg-block" href="index.html">
+                                Dr. Dhiraj Gupta
+                                <strong class="d-block">Mental Health</strong>
+                            </a>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews">Testimonials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#booking">Booking</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i> 2017 - 2018</div>
-                            <h3>Bachelors degree - University of Wolverhapton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt explicabo necessitatibus ab earum modi possimus magnam nihil vitae. Mollitia, quasi.</p>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div>
+                </div>
+            </nav>
 
-            <div class="education-column">
-                <h3 class="title">Experience</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i> 2023 - 2024</div>
-                            <h3>IT Support - Fly AirQ</h3>
-                            <p>
-                                Worked as an IT Support staff at Fly AirQ, where I helped maintain computer systems, troubleshoot technical issues, and assist staff with hardware and software problems. I also supported network configurations and ensured smooth day-to-day IT operations within the company.
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bx-calendar'></i> 2017 - 2018</div>
-                            <h3>Bachelors degree - University of Wolverhapton</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt explicabo necessitatibus ab earum modi possimus magnam nihil vitae. Mollitia, quasi.</p>
-                        </div>
-                    </div> -->
-                <!-- </div> -->
-            
-            <!-- </div> -->
-        <!-- </div> -->
-     <!-- </section> --> 
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="row">
 
-     <!-- SkillS section design -->
-      <!-- <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
+                        <div class="col-12">
+                            <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/slider/portrait-successful-mid-adult-doctor-with-crossed-arms.png" class="img-fluid" alt="">
+                                    </div>
 
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
+                                    <div class="carousel-item">
+                                        <img src="images/slider/young-asian-female-dentist-white-coat-posing-clinic-equipment.jpg" class="img-fluid" alt="">
+                                    </div>
 
-                <div class="skills-box">
-                    <div class="skills-content">
+                                    <div class="carousel-item">
+                                        <img src="images/slider/doctor-s-hand-holding-stethoscope-closeup.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                            <div class="heroText d-flex flex-column justify-content-center">
 
-                        <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                                <h1 class="mt-auto mb-2">
+                                    Better
+                                    <div class="animated-info">
+                                        <span class="animated-item">mind</span>
+                                        <span class="animated-item">peace</span>
+                                        <span class="animated-item">life</span>
+                                    </div>
+                                </h1>
 
-                        <div class="progress">
-                            <h3>JavaScript <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                                <p class="mb-4">
+                                Caring for your mind is as important as caring for your body. 
+                                I am here to help you find balance, peace, and better days.
+                                </p>
 
-                        <div class="progress">
-                            <h3>Python <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
+                                <div class="heroLinks d-flex flex-wrap align-items-center">
+                                    <a class="custom-link me-4" href="#about" data-hover="Learn More">Know More</a>
+
+                                    <a href="tel:+9779741847688" class="contact-phone mb-0"><i class="bi-phone"></i> +977 9741847688</a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="skills-column">
-                <h3 class="title">Professional Skills</h3>
+            <section class="section-padding" id="about">
+                <div class="container">
+                    <div class="row">
 
-                <div class="skills-box">
-                    <div class="skills-content">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h2 class="mb-lg-3 mb-3"> Dr. Dhiraj Gupta</h2>
 
-                        <div class="progress">
-                            <h3>Web Design <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
+                            <p>Compassionate Medical Professional with three years of experience delivering and supervising medical care for adult and infant patients. Demonstrated expertise in patient examination, education, and interpretation of test results; committed to a patient-centered care model through effective therapeutic procedures.</p>
+
+                            <p>You can feel free to use this CSS template for your medical profession or health care related websites. You can <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">support us a little</a> via PayPal if this template is good and useful for your work.</p>
                         </div>
 
-                        <div class="progress">
-                            <h3>Web Development <span>67%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Graphic design <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>SEO <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <div class="col-lg-4 col-md-5 col-12 mx-auto">
+                            <div class="featured-circle bg-white shadow-lg d-flex justify-content-center align-items-center">
+                                <p class="featured-text"><span class="featured-number"></span> Years<br> of Experiences</p>
+                            </div>
                         </div>
 
                     </div>
                 </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-6 ps-0">
+                            <img src="images/gallery/medium-shot-man-getting-vaccine.jpg" class="img-fluid galleryImage" alt="get a vaccine" title="get a vaccine for yourself">
+                        </div>
+
+                        <div class="col-lg-6 col-6 pe-0">
+                            <img src="images/gallery/female-doctor-with-presenting-hand-gesture.jpg" class="img-fluid galleryImage" alt="wear a mask" title="wear a mask to protect yourself">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding pb-0" id="timeline">
+             <div class="container">
+            <div class="row">
+            <h2 class="text-center mb-lg-5 mb-4">My Journey</h2>
+
+            <div class="timeline">
+
+                <!-- Experience 1 -->
+                <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                    <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                        <h3 class="text-light">Medical Officer & Coordinator</h3>
+                        <h5>Metro Kathmandu Hospital, Kathmandu, Nepal</h5>
+                        <p>Provided emergency and critical care management for adult and infant patients. Led ICU operations for COVID-positive patients, participated in life-saving procedures, and conducted team training for emergency response.</p>
+                    </div>
+
+                    <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                        <i class="bi-clipboard-plus timeline-icon"></i>
+                    </div>
+
+                    <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                        <time>June 2022 – Present</time>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                    <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                        <h3 class="text-light">Medical Professional Intern</h3>
+                        <h5>International Medical College Hospital, Dhaka, Bangladesh</h5>
+                        <p>Assisted in diagnostic imaging, X-rays, and CT scans. Conducted patient evaluations, medication administration, and documentation. Focused on enhancing patient satisfaction through compassionate care.</p>
+                    </div>
+
+                    <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                        <i class="bi-clipboard-plus timeline-icon"></i>
+                    </div>
+
+                    <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                        <time>October 2020 – October 2021</time>
+                    </div>
+                </div>
+
+                <!-- Education 1 -->
+                <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                    <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                        <h3 class="text-light">Bachelor of Medicine and Bachelor of Surgery (MBBS)</h3>
+                        <h5>International Medical College Hospital, Dhaka, Bangladesh</h5>
+                        <p>Completed comprehensive medical education and training focused on patient-centered care, diagnostics, and clinical procedures.</p>
+                    </div>
+
+                    <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                        <i class="bi-clipboard-plus timeline-icon"></i>
+                    </div>
+
+                    <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                        <time>November 2013 – November 2019</time>
+                    </div>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes my-lg-5 my-4">
+                    <div class="col-9 col-md-5 ms-md-4 ms-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                        <h3 class="text-light">Higher Secondary Education (Science)</h3>
+                        <h5>Lalitpur Secondary Academy, Lalitpur, Nepal</h5>
+                        <p>Completed higher secondary education in science, laying the foundation for medical studies and clinical training.</p>
+                    </div>
+
+                    <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                        <i class="bi-journal-medical timeline-icon"></i>
+                    </div>
+
+                    <div class="col-9 col-md-5 pe-md-3 pe-lg-0 order-1 order-md-3 py-4 timeline-date">
+                        <time>Completed Before 2013</time>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="row g-0 justify-content-end justify-content-md-around align-items-start timeline-nodes">
+                    <div class="col-9 col-md-5 me-md-4 me-lg-0 order-3 order-md-1 timeline-content bg-white shadow-lg">
+                        <h3 class="text-light">Medical Certifications</h3>
+                        <p>
+                            <strong>Nepal Medical Council Registration:</strong> No. 31091 <br>
+                            <strong>Permanent Registration:</strong> Valid from December 2024 (Unlimited)
+                        </p>
+                    </div>
+
+                    <div class="col-3 col-sm-1 order-2 timeline-icons text-md-center">
+                        <i class="bi-award timeline-icon"></i>
+                    </div>
+
+                    <div class="col-9 col-md-5 ps-md-3 ps-lg-0 order-1 order-md-3 py-4 timeline-date">
+                        <time>2020 – Ongoing</time>
+                    </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <section class="section-padding pb-0" id="reviews">
+              <div class="container">
+            <div class="row">
+
+            <div class="col-12">
+                <h2 class="text-center mb-lg-5 mb-4">Patient Testimonials</h2>
+
+                <div class="owl-carousel reviews-carousel">
+
+                    <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                        <div class="reviews-stars">
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star"></i>
+                        </div>
+
+                        <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Life-Changing Support</strong></p>
+
+                        <p class="reviews-text w-100">Dr. Dhiraj helped me understand and manage my anxiety better. His guidance made a huge difference in my daily life.</p>
+
+                        <img src="images/reviews/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid reviews-image" alt="">
+
+                        <figcaption class="ms-4">
+                            <strong>Sita Sharma</strong>
+                            <span class="text-muted">Patient</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                        <div class="reviews-stars">
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star"></i>
+                        </div>
+
+                        <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Supportive and Understanding</strong></p>
+
+                        <p class="reviews-text w-100">Dr. Dhiraj listened carefully and offered strategies that really helped me cope with stress and depression. Highly recommended!</p>
+
+                        <img src="images/reviews/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid reviews-image" alt="">
+
+                        <figcaption class="ms-4">
+                            <strong>Ram Bahadur Khatri</strong>
+                            <span class="text-muted">Patient</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                        <div class="reviews-stars">
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                        </div>
+
+                        <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Professional and Caring</strong></p>
+
+                        <p class="reviews-text w-100">Thanks to Dr. Dhiraj’s sessions, I feel more confident and capable of managing my emotions. Truly life-changing support.</p>
+
+                        <img src="images/reviews/portrait-british-woman.jpeg" class="img-fluid reviews-image" alt="">
+
+                        <figcaption class="ms-4">
+                            <strong>Sanju Lamichhane</strong>
+                            <span class="text-muted">Patient</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="reviews-thumb d-flex flex-wrap align-items-center rounded">
+                        <div class="reviews-stars">
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star-fill"></i>
+                            <i class="bi-star"></i>
+                            <i class="bi-star"></i>
+                        </div>
+
+                        <p class="text-primary d-block mt-2 mb-0 w-100"><strong>Empathetic Guidance</strong></p>
+
+                        <p class="reviews-text w-100">Dr. Dhiraj provided guidance that helped me overcome my anxiety and improve my overall mental well-being. I feel more at peace now.</p>
+
+                        <img src="images/reviews/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" class="img-fluid reviews-image" alt="">
+
+                        <figcaption class="ms-4">
+                            <strong>Kiran Shrestha</strong>
+                            <span class="text-muted">Patient</span>
+                        </figcaption>
+                    </figure>
+
+                </div>
             </div>
 
-
         </div>
-      </section> -->
+    </div>
+</section>
 
 
-      <!-- CONTACT SECTION -->
-       <!-- <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!<span></h2>
-                <form action="#">
-                    <div class="input-box">
-                        <div class="input-field">
-                            <input type="text" placeholder="Full Name" required>
-                            <span class="focus"></span> 
-                        </div>
-                        <div class="input-field">
-                            <input type="email" placeholder="Email Address" required>
-                            <span class="focus"></span> 
-                        </div>
-                        
-                    </div>
-                    <div class="input-box">
-                        <div class="input-field">
-                            <input type="tel" placeholder="Mobile Number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
-                            <span class="focus"></span> 
-                        </div>                        
-                        <div class="input-field">
-                            <input type="text" placeholder="Email Subject" required>
-                            <span class="focus"></span> 
-                        </div>
-                    </div>
-
-                    <div class="textarea-field">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                        <span class="focus"></span>
-                    </div>
+            <section class="section-padding" id="booking">
+                <div class="container">
+                    <div class="row">
                     
-                    <div class="btn-box btns">
-                        <button type="submit" class="btn">Submit</button>
-                    </div>
-                </form>
-       </section> -->
+                        <div class="col-lg-8 col-12 mx-auto">
+                            <div class="booking-form">
+                                
+                                <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
+                            
+                                <form role="form" action="#booking" method="post">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                        </div>
 
-       <!-- Footer Design -->
-       <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by SUMIT | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#">
-                <i class='bx bxs-up-arrow-alt'></i>
-            </a>
-        </div>
-       </footer>
-    <script src="script.js"></script>
-</body>
+                                        <div class="col-lg-6 col-12">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
+                                        </div>
+
+                                        <div class="col-lg-6 col-12">
+                                            <input type="date" name="date" id="date" value="" class="form-control">
+                                            
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                                            <button type="submit" class="form-control" id="submit-button">Book Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 me-auto col-12">
+                        <h5 class="mb-lg-4 mb-3">Available</h5>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex">
+                                Saturday : Closed
+                            </li>
+
+                            <li class="list-group-item d-flex">
+                                Monday, Tuesday - Firday
+                                <span>6:00 PM - 9:00 PM</span>
+                            </li>
+
+                            <li class="list-group-item d-flex">
+                                Sunday
+                                <span>5:30 PM - 10:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
+                        <h5 class="mb-lg-4 mb-3">Address</Address></h5>
+
+                        <p><a href="dhirajpgold1@gmail.com ">Email</a><p>
+
+                        <p>Dhulikhel Hospital , Neapal</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ms-auto">
+                    <h5 class="mb-lg-4 mb-3">Socials</h5>
+
+                    <ul class="social-icon" style="font-size: 3.5rem;">
+                        <li>
+                            <a href="https://www.facebook.com/dttttt" target="_blank" class="social-icon-link" style="color: #1877f3;">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com" target="_blank" class="social-icon-link" style="color: #000;">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/dhiraj345/" target="_blank" class="social-icon-link" style="color: #e4405f;">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank" class="social-icon-link" style="color: #ff0000;">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+                        <p class="copyright-text">Copyright © Dr. Dhiraj Gupta 2025
+                        <br><br>Design: <a href="https://sumitshah1.com.np" target="_parent">Sumit Shah</a></p>
+                    </div>
+
+                </div>
+            </section>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <script src="js/custom.js"></script>
+<!--
+
+TemplateMo 566 Medic Care
+
+https://templatemo.com/tm-566-medic-care
+
+-->
+    </body>
 </html>
